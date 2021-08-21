@@ -15,10 +15,10 @@
     "dependencies": {
         "angular": "1.8.x",
         "bootstrap": "^3.4.1",
-        "paper": "^0.12.11"
+        "paper": "^0.12.15"
     },
     "devDependencies": {
-        "eslint": "^7.17.0",
+        "eslint": "^7.32.0",
         "grunt": "^1.3.0",
         "grunt-angular-templates": "^1.2.0",
         "html-minifier": "^4.0.0",
@@ -30,12 +30,12 @@
         "grunt-contrib-copy": "^1.0.0",
         "grunt-contrib-imagemin": "^4.0.0",
         "grunt-contrib-less": "^2.0.0",
-        "grunt-contrib-uglify": "^5.0.0",
+        "grunt-contrib-uglify": "^5.0.1",
         "grunt-contrib-watch": "^1.1.0",
         "grunt-string-replace": "^1.3.1",
-        "jshint": "^2.12.0",
+        "jshint": "^2.13.1",
         "request": "^2.88.2",
-        "stylelint": "^13.8.0",
+        "stylelint": "^13.13.1",
         "stylelint-config-recommended": "^3.0.0",
         "temporary": "1.1.0"
     },
