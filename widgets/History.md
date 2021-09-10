@@ -11,6 +11,11 @@
 * Football: Team stat header abbreviations on mobile to fix horizontal scrolling issue
 * Update libraries
 
+*Hot fix on 2021-09-10:*
+
+* Football: Hotfix missing "Passing :Yards" label in non-mobile views, and a few minor layout issues on mobile
+* Update libraries
+
 ## 2.0.5 / 2019-09-19
 
 * Remove hard-coded example game ids from the main sport examples, in favor of showing how to use URL params like `gameKey=123`
