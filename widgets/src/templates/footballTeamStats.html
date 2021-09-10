@@ -44,15 +44,15 @@
             </tr>
             <tr>
                 <td>
-                    <span class="digital-scout-hidden-sm">Passing: Completions - Attempts</span>
-                    <span class="digital-scout-visible-sm-inline" title="Passing: Completions - Attempts">Pass: Cmp-Att</span>
+                    <span class="digital-scout-hidden-sm">Passing Completions/Attempts</span>
+                    <span class="digital-scout-visible-sm-inline" title="Passing: Completions - Attempts">Pass Cmp/Att</span>
                 </td>
-                <td>{{awayStats.PassingCompletions}} - {{awayStats.PassingAttempts}}</td>
-                <td>{{homeStats.PassingCompletions}} - {{homeStats.PassingAttempts}}</td>
+                <td>{{awayStats.PassingCompletions}}/{{awayStats.PassingAttempts}}</td>
+                <td>{{homeStats.PassingCompletions}}/{{homeStats.PassingAttempts}}</td>
             </tr>
             <tr>
                 <td>
-                    <span class="digital-scout-hidden-sm"></span>
+                    <span class="digital-scout-hidden-sm">Passing Yards</span>
                     <span class="digital-scout-visible-sm-inline" title="Passing Yards">Pass Yds</span>
                 </td>
                 <td>{{awayStats.PassingYards}}</td>
@@ -60,7 +60,7 @@
             </tr>
             <tr>
                 <td>
-                    <span class="digital-scout-hidden-sm">Passing: Touchdowns - Interceptions</span>
+                    <span class="digital-scout-hidden-sm">Passing Touchdowns - Interceptions</span>
                     <span class="digital-scout-visible-sm-inline" title="Passing: Touchdowns - Interceptions">TD-Int</span>
                 </td>
                 <td>{{awayStats.PassingTouchdowns}} - {{awayStats.Interceptions}}</td>
@@ -119,12 +119,12 @@
                     <span class="digital-scout-hidden-sm">Third Down Conversions/Attempts</span>
                     <span class="digital-scout-visible-sm-inline" title="Third Down Conversions/Attempts">3rd</span>
                 </td>
-                <td>
+                <td class="ng-binding-child">
                     <span ng-show="awayStats.ThirdDownAttempts > 0">
                         {{awayStats.ThirdDownConversions}}/{{awayStats.ThirdDownAttempts}} ({{awayStats.ThirdDownConversionPercentage | decimals:1}}%)
                     </span>
                 </td>
-                <td>
+                <td class="ng-binding-child">
                     <span ng-show="homeStats.ThirdDownAttempts > 0">
                         {{homeStats.ThirdDownConversions}}/{{homeStats.ThirdDownAttempts}} ({{homeStats.ThirdDownConversionPercentage | decimals:1}}%)
                     </span>
@@ -135,12 +135,12 @@
                     <span class="digital-scout-hidden-sm">Fourth Down Conversions/Attempts</span>
                     <span class="digital-scout-visible-sm-inline" title="Fourth Down Conversions/Attempts">4th</span>
                 </td>
-                <td>
+                <td class="ng-binding-child">
                     <span ng-show="awayStats.FourthDownAttempts > 0">
                         {{awayStats.FourthDownConversions}}/{{awayStats.FourthDownAttempts}} ({{awayStats.FourthDownConversionPercentage | decimals:1}}%)
                     </span>
                 </td>
-                <td>
+                <td class="ng-binding-child">
                     <span ng-show="homeStats.FourthDownAttempts > 0">
                         {{homeStats.FourthDownConversions}}/{{homeStats.FourthDownAttempts}} ({{homeStats.FourthDownConversionPercentage | decimals:1}}%)
                     </span>
