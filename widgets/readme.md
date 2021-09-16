@@ -4,6 +4,38 @@
 
 ## [CHANGELOG](https://github.com/playon/ds-hsgc-api-samples/blob/master/widgets/History.md)
 
+## Usage
+
+The easiest way to embed widgets is to drop the following `<IFRAME>` into your web site as raw HTML. (Though there are also other options. See below.)
+
+You will have to add this `IFRAME` code once for every game you want to link to.
+
+```html
+    <!-- Change the width & height (optional), apiKey (required, see Data License below), and gameKey (which will be different for each game) -->
+    <iframe width="940" height="1800" style="border: 0;"
+        src="https://cdn.digitalscout.com/js/hsgc-widgets/2.1.0/football.html?apiKey=aaaaaaaa-bbbb-cccc-dddd-eee222444888&gameKey=123456789"></iframe>
+```
+
+In the URL, the `gameKey=123456789` is the Digital Scout game ID (the number part). You can find it in the Digital Scout [Dashboard](https://dashboard.digitalscout.com/dashboard/?utm_source=digitalscout&utm_medium=github&utm_campaign=widgets) by clicking the **Edit** game button and copying the ID from the end of the URL.
+
+> :warning: The `gameKey` is different for each game, so make sure to update it!
+
+The HTML page (`football.html` in the above example) can be changed to `football.html`, `basketball.html`, or `volleyball.html`. Or, you can instead make your own based on the [examples](./examples) provided in this repository.
+
+The `width` should be set to whatever fits best with your site width and for inside the content area you are placing the `<IFRAME>`.
+
+The `height` can be whatever you want; it will scroll if too short, or leave white space if too long. Each game is different so you can't really predict a perfect size for the height.
+
+The `apiKey` is customized just for you when you purchase a data license. (Required for using the widgets. Contact sales at digitalscout.com.) Make sure to include it in every request like this so that the box score will load correctly.
+
+Feel free to place any logos, sponsorships, or ads before or after the `<IFRAME>` code as you see fit. As long as they fit within the Digital Scout data license agreement terms. (Which basically boils down to 'no inappropriate ads'. The complete agreement is of course available when you purchase the data license from us, or ask our Sales team for a copy if want to go through it in more detail now.)
+
+Some additional tech notes:
+
+* `1200px` is the best breakpoint for the widget `width`, as it lets the views and labels expand. But that width may also be shrunk down if necessary, so it will work well for mobile devices too.
+* If you customize the widgets and use your own HTML instead of an `<IFRAME>` (see the [examples](./examples)), you should implement a responsive design without having to set a fixed width and height for the `<IFRAME>`. But that takes a developer on your side to be able to integrate it with your site more directly, without the `<IFRAME>` but by including the direct JavaScript links and AngularJS-tagged elements. You are welcome to do that if you have the ability.
+* The `style` in this example `<IFRAME>` code is optional; feel free to style the outer container as you wish. In most cases you won't want a border, so we added that setting in the example for you.
+
 ## Examples
 
 See the `examples` directory for what kind of code you would need to use to embed these widgets in an `IFRAME` anywhere on the web.
@@ -14,9 +46,9 @@ Most of the examples link to a specific game for demonstration. Most of the comm
 
 Here are some examples you can use in this case:
 
-* [`basketball.html?gameKey=9105703`](https://cdn.digitalscout.com/js/hsgc-widgets/2.1.0/basketball.html?gameKey=9105703)
-* [`football.html?gameKey=8284106`](https://cdn.digitalscout.com/js/hsgc-widgets/2.1.0/football.html?gameKey=8284106)
-* [`volleyball.html?gameKey=8267306`](https://cdn.digitalscout.com/js/hsgc-widgets/2.1.0/volleyball.html?gameKey=8267306)
+* [`basketball.html?apiKey=your-api-key-goes-here&gameKey=9105703`](https://cdn.digitalscout.com/js/hsgc-widgets/2.1.0/basketball.html?gameKey=9105703)
+* [`football.html?apiKey=your-api-key-goes-here&gameKey=8284106`](https://cdn.digitalscout.com/js/hsgc-widgets/2.1.0/football.html?gameKey=8284106)
+* [`volleyball.html?apiKey=your-api-key-goes-here&gameKey=8267306`](https://cdn.digitalscout.com/js/hsgc-widgets/2.1.0/volleyball.html?gameKey=8267306)
 
 ## License
 

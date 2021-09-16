@@ -11,10 +11,11 @@
 * Football: Team stat header abbreviations on mobile to fix horizontal scrolling issue
 * Update libraries
 
-*Hot fix on 2021-09-10:*
+*Hot fix on 2021-09-16:*
 
 * Football: Hotfix missing "Passing :Yards" label in non-mobile views, and a few minor layout issues on mobile
 * Update libraries
+* Add some usage examples to the README
 
 ## 2.0.5 / 2019-09-19
 
