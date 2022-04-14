@@ -11,7 +11,7 @@
   "main": "app.js",
   "private": true,
   "dependencies": {
-    "async": "^2.6.3",
+    "async": "^3.2.2",
     "lodash": "latest",
     "request": "^2.88.0"
   },
